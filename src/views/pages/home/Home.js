@@ -16,20 +16,22 @@ let Home = {
   render: async () => {
     const jokes = await getJokesRandom();
     const categories = await getJokesCategory();
-    console.log(jokes);
 
     let view = `
           <div>
-           <ul class="menu-list">
-            ${categories
-              .map(
-                (category, index) =>
-                  `<li class="menu-item" key=${index}>${category}</li>`
-              )
-              .join('')}
-           </ul>
+            <h1>Categories:</h1>
+            <ul class="menu-list">
+              ${categories
+                .map(
+                  (category, index) =>
+                    `<li class="menu-item" key=${index}>${category}</li>`
+                )
+                .join('')}
+            </ul>
+            <br>
             <img src=${jokes.icon_url}>
-            <h1>${jokes.value}</h1>
+            <h2>Chuck Norris fact:</h2>
+            <p>— "${jokes.value}"</p>
           </div>
       `;
 

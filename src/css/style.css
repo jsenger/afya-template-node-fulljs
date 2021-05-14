@@ -4,4 +4,11 @@
   padding: 0;
   background-color: black;
   color: #fff;
-  font-family: 'Recursive', sans-serif; }
+  font-family: "Courier New", Arial, sans-serif; }
+
+body {
+  margin: 1rem; }
+  body h1, body h2 {
+    color: #f15a24; }
+  body ul {
+    margin-left: 1rem; }
