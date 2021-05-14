@@ -29,7 +29,7 @@ let Home = {
               .join('')}
            </ul>
             <img src=${jokes.icon_url}>
-            <h1>${jokes.value}</div>
+            <h1>${jokes.value}</h1>
           </div>
       `;
 
